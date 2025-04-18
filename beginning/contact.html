@@ -44,77 +44,85 @@
             Meowtown, CA 90210<br>
             (555) 867-5309
         </address>
-        <div class="form">
-            <div>
-                <em class="note">Note: Fields highlighted in red are required.</em>
-            </div>
-            <div>
-                <br>
-                <b class="first">First Name:</b>
-                <b class="last">Last Name:</b>
-                <br>
-                <input type="text" class="firstInput" name="First" placeholder="First Name" size="30" required autofocus>
-                <input type="text" name="Last" placeholder="Last Name" size="30" required>
-                <br>
-            </div>
-            <div class="org">
-                <b>Organization (if any):</b>
-                <b class="phone">Phone Number</b>
-                <br>
-                <input type="text" name="Org" placeholder="Optional" size="30">
-                <input type="tel" name="Phone" placeholder="555-555-5555" size="30" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                <br>
-            </div>
-            <div class="mail">
-                <b>Email Adress:</b>
-                <br>
-                <input class="emailInput" type="email" name="Email" placeholder="example@domain.com" required pattern="*@*">
-            </div>
-            <div class="choices">
-                <div>
-                    <b>Feline Interests</b>
-                    <br>
-                    <input type="checkbox" name="Interests" value="Wellness">Cat Wellness<br>
-                    <input type="checkbox" name="Interests" value="Training">Cat Training<br>
-                    <input type="checkbox" name="Interests" value="Adoption">Cat Adoption<br>
+        <body>
+            <form action="#" method="post">
+                <div class="form">
+                    <div>
+                        <em class="note">Note: Fields highlighted in red are required.</em>
+                    </div>
+                    <div>
+                        <br>
+                        <b class="first">First Name:</b>
+                        <b class="last">Last Name:</b>
+                        <br>
+                        <input type="text" class="firstInput" name="First" placeholder="First Name" size="30" required autofocus>
+                        <input type="text" name="Last" placeholder="Last Name" size="30" required>
+                        <br>
+                    </div>
+                    <div class="org">
+                        <b>Organization (if any):</b>
+                        <b class="phone">Phone Number</b>
+                        <br>
+                        <input type="text" name="Org" placeholder="Optional" size="30">
+                        <input type="tel" name="Phone" placeholder="555-555-5555" size="30" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                        <br>
+                    </div>
+                    <div class="mail">
+                        <b>Email Adress:</b>
+                        <br>
+                        <input class="emailInput" type="email" name="Email" placeholder="example@domain.com" required pattern="*@*">
+                    </div>
+                    <div class="choices">
+                        <div>
+                            <b>Feline Interests</b>
+                            <br>
+                            <div class="check">
+                                <input type="checkbox" name="Interests" value="Wellness">Cat Wellness<br>
+                                <input type="checkbox" name="Interests" value="Training">Cat Training<br>
+                                <input type="checkbox" name="Interests" value="Adoption">Cat Adoption<br>
+                            </div>
+                        </div>
+                        <div>
+                            <b>Your Cat's Lifestyle</b>
+                            <br>
+                            <div class="radio">
+                            <input type="radio" name="Lifestyle" value="Indoor">Indoor Cat<br>
+                            <input type="radio" name="Lifestyle" value="Outdoor">Outdoor Cat<br>
+                            <input type="radio" name="Lifestyle" value="Both">Both<br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cats">
+                            <b>How many cats do you have?</b>
+                            <br>
+                            <select class="numCats" name="Cats">
+                                <option name="None">None</option>
+                                <option name="One">One</option>
+                                <option name="Two">Two</option>
+                                <option name="Three">Three</option>
+                                <option name="Four">Four</option>
+                                <option name="Five">Five</option>
+                            </select>
+                    </div>
+                    <div class="hear">
+                            <b>How did you hear about Purrfect Vibes?</b>
+                            <br>
+                            <select class="hearSelect" name="Hear" multiple>
+                                <option name="Social">Social Media</option>
+                                <option name="Friend">Friend/Family</option>
+                                <option name="Email">Email</option>
+                                <option name="Ad">Advertisement</option>
+                            </select>
+                    </div>
+                    <div class="questions">
+                            <b>Questions or Purrs</b>
+                            <br>
+                            <textarea class="quests" rows=4 cols=55 placeholder="Share your thoughts with us!" wrap="soft"></textarea>
+                    </div> 
+                    <input type="submit" class="submit" name="Submit" value="SUBMIT TO PURFECT VIBES" disabled>
                 </div>
-                <div>
-                    <b>Your Cat's Lifestyle</b>
-                    <br>
-                    <input type="radio" name="Lifestyle" value="Indoor">Indoor Cat<br>
-                    <input type="radio" name="Lifestyle" value="Outdoor">Outdoor Cat<br>
-                    <input type="radio" name="Lifestyle" value="Both">Both<br>
-                </div>
-           </div>
-           <div class="cats">
-                <b>How many cats do you have?</b>
-                <br>
-                <select class="numCats" name="Cats">
-                    <option name="None">None</option>
-                    <option name="One">One</option>
-                    <option name="Two">Two</option>
-                    <option name="Three">Three</option>
-                    <option name="Four">Four</option>
-                    <option name="Five">Five</option>
-                </select>
-           </div>
-           <div class="hear">
-                <b>How did you hear about Purrfect Vibes?</b>
-                <br>
-                <select class="hearSelect" name="Hear" multiple>
-                    <option name="Social">Social Media</option>
-                    <option name="Friend">Friend/Family</option>
-                    <option name="Email">Email</option>
-                    <option name="Ad">Advertisement</option>
-                </select>
-           </div>
-           <div class="questions">
-                <b>Questions or Purrs</b>
-                <br>
-                <textarea class="quests" rows=4 cols=55 placeholder="Share your thoughts with us!" wrap="soft"></textarea>
-            </div> 
-            <input type="submit" class="submit" name="Submit" value="SUBMIT TO PURFECT VIBES" disabled>
-        </div>
+          </form>  
+        </body>
     </section>
     <footer>
         <div>

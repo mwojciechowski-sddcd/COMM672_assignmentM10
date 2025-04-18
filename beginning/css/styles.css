@@ -257,6 +257,11 @@ footer img {
 .choices {
     display: flex;
     gap: 120px;
+    height: 100px;
+}
+
+.check, .radio {
+    padding-top: 10px;
 }
 
 .last {
@@ -279,6 +284,7 @@ footer img {
     font-weight: bold;
     font-size: 8;
     margin-bottom: 40px;
+    height: 40px;
 }
 
 .phone {
