@@ -45,23 +45,31 @@
             (555) 867-5309
         </address>
         <div class="form">
-            <em>Note: Fields highlighted in red are required.</em>
-            <br>
-            <b>First Name:</b>
-            <b>Last Name:</b>
-            <br>
-            <input type="text" name="First" placeholder="First Name" size="30">
-            <input type="text" name="Last" placeholder="Last Name" size="30">
-            <br>
-            <b>Organization (if any):</b>
-            <b>Phone Number</b>
-            <br>
-            <input type="text" name="Org" placeholder="Optional" size="30">
-            <input type="tel" name="Phone" placeholder="555-555-5555" size="30">
-            <br>
-            <b>Email Adress:</b>
-            <br>
-            <input type="email" name="Email" placeholder="example@domain.com" size="60">
+            <div>
+                <em class="note">Note: Fields highlighted in red are required.</em>
+            </div>
+            <div>
+                <br>
+                <b class="first">First Name:</b>
+                <b class="last">Last Name:</b>
+                <br>
+                <input type="text" class="firstInput" name="First" placeholder="First Name" size="30" required autofocus>
+                <input type="text" name="Last" placeholder="Last Name" size="30" required>
+                <br>
+            </div>
+            <div class="org">
+                <b>Organization (if any):</b>
+                <b class="phone">Phone Number</b>
+                <br>
+                <input type="text" name="Org" placeholder="Optional" size="30">
+                <input type="tel" name="Phone" placeholder="555-555-5555" size="30" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+                <br>
+            </div>
+            <div class="mail">
+                <b>Email Adress:</b>
+                <br>
+                <input class="emailInput" type="email" name="Email" placeholder="example@domain.com" required pattern="*@*">
+            </div>
             <div class="choices">
                 <div>
                     <b>Feline Interests</b>
@@ -78,10 +86,10 @@
                     <input type="radio" name="Lifestyle" value="Both">Both<br>
                 </div>
            </div>
-           <div>
+           <div class="cats">
                 <b>How many cats do you have?</b>
                 <br>
-                <select name="Cats">
+                <select class="numCats" name="Cats">
                     <option name="None">None</option>
                     <option name="One">One</option>
                     <option name="Two">Two</option>
@@ -90,20 +98,22 @@
                     <option name="Five">Five</option>
                 </select>
            </div>
-           <div>
+           <div class="hear">
                 <b>How did you hear about Purrfect Vibes?</b>
                 <br>
-                <select name="Hear" multiple>
+                <select class="hearSelect" name="Hear" multiple>
                     <option name="Social">Social Media</option>
                     <option name="Friend">Friend/Family</option>
+                    <option name="Email">Email</option>
+                    <option name="Ad">Advertisement</option>
                 </select>
            </div>
-           <div>
+           <div class="questions">
                 <b>Questions or Purrs</b>
                 <br>
-                <textarea rows=3 cols=60 placeholder="Share your thoughts with us!"></textarea>
+                <textarea class="quests" rows=4 cols=55 placeholder="Share your thoughts with us!" wrap="soft"></textarea>
             </div> 
-            <button name="Submit">Submit to Purfect Vibes</button>
+            <input type="submit" class="submit" name="Submit" value="SUBMIT TO PURFECT VIBES" disabled>
         </div>
     </section>
     <footer>

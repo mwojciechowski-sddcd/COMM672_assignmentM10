@@ -244,9 +244,45 @@ footer img {
     margin-top: -60px;
 }
 
+.first, .org, .mail, .choices, .cats, .hear, .questions, .submit {
+    margin-top: 10px;
+}
+
+.form input, textarea, select {
+    margin-right: 15px;
+    margin-top: 5px;
+    padding: 5px;
+}
+
 .choices {
     display: flex;
-    gap: 80px;
+    gap: 120px;
+}
+
+.last {
+    margin-left: 156px;
+}
+
+.numCats, .hearSelect, .emailInput, .quests {
+    width: 60%;
+}
+
+.hearSelect {
+    height: 35px;
+}
+
+.submit {
+    text-align: center;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-weight: bold;
+    font-size: 8;
+    margin-bottom: 40px;
+}
+
+.phone {
+    margin-left: 85px;
 }
 
 /**Tablet Styles**/
