@@ -44,6 +44,67 @@
             Meowtown, CA 90210<br>
             (555) 867-5309
         </address>
+        <div class="form">
+            <em>Note: Fields highlighted in red are required.</em>
+            <br>
+            <b>First Name:</b>
+            <b>Last Name:</b>
+            <br>
+            <input type="text" name="First" placeholder="First Name" size="30">
+            <input type="text" name="Last" placeholder="Last Name" size="30">
+            <br>
+            <b>Organization (if any):</b>
+            <b>Phone Number</b>
+            <br>
+            <input type="text" name="Org" placeholder="Optional" size="30">
+            <input type="tel" name="Phone" placeholder="555-555-5555" size="30">
+            <br>
+            <b>Email Adress:</b>
+            <br>
+            <input type="email" name="Email" placeholder="example@domain.com" size="60">
+            <div class="choices">
+                <div>
+                    <b>Feline Interests</b>
+                    <br>
+                    <input type="checkbox" name="Interests" value="Wellness">Cat Wellness<br>
+                    <input type="checkbox" name="Interests" value="Training">Cat Training<br>
+                    <input type="checkbox" name="Interests" value="Adoption">Cat Adoption<br>
+                </div>
+                <div>
+                    <b>Your Cat's Lifestyle</b>
+                    <br>
+                    <input type="radio" name="Lifestyle" value="Indoor">Indoor Cat<br>
+                    <input type="radio" name="Lifestyle" value="Outdoor">Outdoor Cat<br>
+                    <input type="radio" name="Lifestyle" value="Both">Both<br>
+                </div>
+           </div>
+           <div>
+                <b>How many cats do you have?</b>
+                <br>
+                <select name="Cats">
+                    <option name="None">None</option>
+                    <option name="One">One</option>
+                    <option name="Two">Two</option>
+                    <option name="Three">Three</option>
+                    <option name="Four">Four</option>
+                    <option name="Five">Five</option>
+                </select>
+           </div>
+           <div>
+                <b>How did you hear about Purrfect Vibes?</b>
+                <br>
+                <select name="Hear" multiple>
+                    <option name="Social">Social Media</option>
+                    <option name="Friend">Friend/Family</option>
+                </select>
+           </div>
+           <div>
+                <b>Questions or Purrs</b>
+                <br>
+                <textarea rows=3 cols=60 placeholder="Share your thoughts with us!"></textarea>
+            </div> 
+            <button name="Submit">Submit to Purfect Vibes</button>
+        </div>
     </section>
     <footer>
         <div>
