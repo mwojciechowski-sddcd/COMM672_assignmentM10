@@ -50,30 +50,29 @@
                     <div>
                         <em class="note">Note: Fields highlighted in red are required.</em>
                     </div>
-                    <div>
-                        <br>
-                        <b class="first">First Name:</b>
-                        <b class="last">Last Name:</b>
-                        <br>
-                        <input type="text" class="firstInput" name="First" placeholder="First Name" size="30" required autofocus>
-                        <input type="text" name="Last" placeholder="Last Name" size="30" required>
-                        <br>
+                    <div class="names">
+                        <div class="first"><b>First Name:</b>
+                            <div class="firstInput"><input type="text" name="First" placeholder="First Name" size="30" required autofocus></div>
+                        </div>
+                        <div class="last"><b>Last Name:</b>
+                            <div class="lastInput"><input type="text" name="Last" placeholder="Last Name" size="30" required></div>
+                        </div>
                     </div>
                     <div class="org">
-                        <b>Organization (if any):</b>
-                        <b class="phone">Phone Number</b>
-                        <br>
-                        <input type="text" name="Org" placeholder="Optional" size="30">
-                        <input type="tel" name="Phone" placeholder="555-555-5555" size="30" required pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-                        <br>
+                        <div><b>Organization (if any):</b>
+                            <div><input type="text" class="orgInput" name="Org" placeholder="Optional" size="30"></div>
+                        </div>
+                        <div class="phone"><b>Phone Number</b>
+                            <div><input type="tel" class="phoneInput" name="Phone" placeholder="555-555-5555" size="30" required pattern="\d{3}[\-]\d{3}[\-]\d{4}"></div>
+                        </div>
                     </div>
                     <div class="mail">
                         <b>Email Adress:</b>
                         <br>
-                        <input class="emailInput" type="email" name="Email" placeholder="example@domain.com" required pattern="*@*">
+                        <input type="email" class="emailInput" name="Email" placeholder="example@domain.com" required pattern="*@*">
                     </div>
                     <div class="choices">
-                        <div>
+                        <div class="feline">
                             <b>Feline Interests</b>
                             <br>
                             <div class="check">
@@ -82,13 +81,13 @@
                                 <input type="checkbox" name="Interests" value="Adoption">Cat Adoption<br>
                             </div>
                         </div>
-                        <div>
+                        <div class="life">
                             <b>Your Cat's Lifestyle</b>
                             <br>
                             <div class="radio">
-                            <input type="radio" name="Lifestyle" value="Indoor">Indoor Cat<br>
-                            <input type="radio" name="Lifestyle" value="Outdoor">Outdoor Cat<br>
-                            <input type="radio" name="Lifestyle" value="Both">Both<br>
+                                <input type="radio" name="Lifestyle" value="Indoor">Indoor Cat<br>
+                                <input type="radio" name="Lifestyle" value="Outdoor">Outdoor Cat<br>
+                                <input type="radio" name="Lifestyle" value="Both">Both<br>
                             </div>
                         </div>
                     </div>

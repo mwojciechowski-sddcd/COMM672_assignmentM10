@@ -244,14 +244,33 @@ footer img {
     margin-top: -60px;
 }
 
-.first, .org, .mail, .choices, .cats, .hear, .questions, .submit {
+.first, .last, .org, .mail, .choices, .cats, .hear, .questions, .submit {
     margin-top: 10px;
+}
+
+input:required {
+    border: 1px solid red;
+}
+
+.orgInput {
+    border: 1px solid green;
 }
 
 .form input, textarea, select {
     margin-right: 15px;
     margin-top: 5px;
     padding: 5px;
+    border-radius: 5px;
+}
+
+.form textarea, select {
+    border: 1px solid #d1d1d1;
+}
+
+.names {
+    display: flex;
+    gap: 7px;
+    height: 60px;
 }
 
 .choices {
@@ -260,12 +279,14 @@ footer img {
     height: 100px;
 }
 
-.check, .radio {
-    padding-top: 10px;
+.org {
+    display: flex;
+    gap: 7px;
+    height: 60px;
 }
 
-.last {
-    margin-left: 156px;
+.check, .radio {
+    padding-top: 10px;
 }
 
 .numCats, .hearSelect, .emailInput, .quests {
@@ -285,10 +306,7 @@ footer img {
     font-size: 8;
     margin-bottom: 40px;
     height: 40px;
-}
-
-.phone {
-    margin-left: 85px;
+    color: black;
 }
 
 /**Tablet Styles**/
@@ -305,6 +323,49 @@ footer img {
     }
     .features-page .feature-page-block {
         width: 40%;
+    }
+
+    .form {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    input, .emailInput{
+        width: 100%
+    }
+
+    .choices {
+        margin-top: 20px;
+        height: 140px;
+        flex-direction: column;
+        gap: 150px;
+    }
+
+    .names {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        height: 130px;
+    }
+    
+    .org {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        height: 110px;
+    }
+
+    .check, .radio {
+        padding-top: 0px;
+        position: absolute;
+    }
+
+    .cats {
+        margin-top: 180px;
+    }
+
+    .submit, .quests, .numCats, .hearSelect {
+        width: 100%;
     }
 }
 
